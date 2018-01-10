@@ -12,17 +12,17 @@ driver = webdriver.Chrome()
 
 url = driver.get(address)
 
-username = driver.find_element_by_id("user_id")
+username_field = driver.find_element_by_id("user_id")
 
-username.clear()
+username_field.clear()
 
-username.send_keys(username)
+username_field.send_keys(username)
 
-password = driver.find_element_by_id("password")
+password_field = driver.find_element_by_id("password")
 
-password.clear()
+password_field.clear()
 
-password.send_keys(password)
+password_field.send_keys(password)
 
 login_button = driver.find_element_by_id("entry-login")
 
